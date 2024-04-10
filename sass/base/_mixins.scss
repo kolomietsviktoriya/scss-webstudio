@@ -1,0 +1,18 @@
+@mixin  title(){
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+@mixin flex(){
+    display: flex;
+    justify-content: space-between;
+}
+ %button{
+    border-radius: 4px;
+    color: $foot-adress;
+    background-color:  $button;
+}

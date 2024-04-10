@@ -25,8 +25,7 @@
 } 
  
 .benefits__list { 
-    display: flex; 
-    justify-content: space-between; 
+    @include flex();
 } 
  
 .benefits__card { 
@@ -50,46 +49,8 @@
     line-height: 171.429% 
 } 
 .name__section{ 
-    color: $main-titles; 
-    font-weight: 700; 
-    font-size: 36px; 
-    margin-bottom: 50px; 
-    text-align: center; 
+    @include title();
 } 
  
-.work { 
-    padding-top: 118px; 
-    padding-bottom: 94px; 
-} 
+
  
-.work__list { 
-    display: flex; 
-    justify-content: space-between; 
-} 
- 
-.work__card { 
-    position: relative; 
-} 
- 
-.work__img { 
-    width: 370px; 
-    height: 294px; 
-} 
- 
-.activity__subtitle{ 
-    position: absolute; 
-    bottom: 4px; 
-    color: $white-color; 
-    font-size: 14px; 
-    font-weight: 700; 
-    letter-spacing: 0.42px; 
-    text-transform: uppercase; 
-    font-family:'Roboto',sans-serif ; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    height: 70px; 
-    width: 100%; 
-    background-color: rgba(47, 48, 58, 0.80); ; 
- 
-} 
