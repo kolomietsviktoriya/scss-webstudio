@@ -82,14 +82,14 @@
     opacity: 1 ;
 }
 .card__name { 
-    color: $main-text; 
+    color:  $main-titles; 
     font-weight: 700; 
     margin-bottom: 5px; 
     text-align: center; 
 } 
  
 .card__type { 
-    color: $tex-color; 
+    color: $text-color ; 
     font-weight: 400; 
     padding-bottom: 20px; 
     text-align: center; 

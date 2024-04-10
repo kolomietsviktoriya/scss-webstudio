@@ -5,20 +5,20 @@
     height: 120px; 
     background-color: #F5F4FA; 
     border-radius: 4px; 
-    background-image: url(./img/Group.webp); 
+    background-image: url(../img/Group.webp); 
     background-size: 70px; 
     background-repeat: no-repeat; 
     background-position: center; 
     margin-bottom: 30px; 
 } 
 .benefits__card:nth-child(2)::before{ 
-    background-image: url(./img/clock1.webp); 
+    background-image: url(../img/clock1.webp); 
 } 
 .benefits__card:nth-child(3)::before{ 
-    background-image: url(./img/vektor.webp); 
+    background-image: url(../img/vektor.webp); 
 } 
 .benefits__card:nth-child(4)::before{ 
-    background-image: url(./img/astronavt.webp); 
+    background-image: url(../img/astronavt.webp); 
 } 
 .benefits { 
     padding-top: 95px; 
