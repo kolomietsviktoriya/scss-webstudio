@@ -1,0 +1,96 @@
+
+.project { 
+    padding-bottom: 95px; 
+    padding-top: 95px; 
+ 
+} 
+ 
+.main__filter { 
+    background-color: $bottom-section-bg; 
+    font-weight: 500; 
+    border-radius: 4px; 
+    border: none; 
+    padding: 6px 22px; 
+    margin-bottom: 50px; 
+} 
+.main__filter:hover, 
+.main__filter:focus{ 
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10); 
+} 
+.main__filter:hover { 
+    background-color: $hover-color; 
+    color: $foot-studio; 
+    font-weight: 500; 
+} 
+ 
+.main__card { 
+    border: 1px solid $border-color-portfolio; 
+    width: 370px; 
+} 
+.main__card:hover, 
+.main__card:focus{ 
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12); 
+} 
+.filter__wrap{ 
+    width: 575px; 
+    margin: 0 auto;     
+} 
+ 
+.filter__list{ 
+    display: flex; 
+    justify-content: space-between; 
+     
+} 
+ 
+.filter {} 
+ 
+.project__list{ 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 30px;  
+    /* display: flex; 
+    flex-wrap: wrap; 
+    gap: 30px; 
+    flex-basis:calc((100% - 60px) / 3); */ 
+} 
+ 
+ 
+.card__photo { 
+    margin-bottom: 20px; 
+} 
+.product__trum{
+    position: relative;
+    overflow: hidden;
+}
+.product__action{
+   position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    background-color: #2196F3E5;
+    color: $white-color;
+    padding: 63px 24px;
+    opacity: 0;
+}
+.main__card{
+    position: relative;
+}
+.main__card:hover .product__action{
+    opacity: 1 ;
+}
+.card__name { 
+    color: $main-text; 
+    font-weight: 700; 
+    margin-bottom: 5px; 
+    text-align: center; 
+} 
+ 
+.card__type { 
+    color: $tex-color; 
+    font-weight: 400; 
+    padding-bottom: 20px; 
+    text-align: center; 
+} 

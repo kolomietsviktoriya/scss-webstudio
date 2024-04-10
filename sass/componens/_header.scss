@@ -1,0 +1,89 @@
+.header__wrap { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+ 
+/* header */ 
+ 
+.header { 
+    padding-bottom: 25px; 
+    padding-top: 25px; 
+     
+} 
+ 
+.header__wraper{ 
+    display: flex; 
+    align-items: center; 
+} 
+.header__logo { 
+    color: $head-studio; 
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 700; 
+    font-size: 26px; 
+    margin-right: 93px; 
+} 
+ 
+.header__web { 
+    color: $web; 
+    font-family: 'Raleway', sans-serif; 
+    font-size: 26px; 
+} 
+ 
+.header__list { 
+    width: 281px; 
+    display: flex; 
+    justify-content: space-between; 
+} 
+ 
+.header__item {} 
+ 
+.header__link { 
+    color: $head-nav; 
+    font-weight: 500; 
+    font-size: 14px; 
+} 
+ 
+.header__link:hover, 
+.header__link:focus { 
+    color: $hover-color; 
+    font-weight: 500; 
+    font-size: 14px; 
+} 
+ 
+.header__contacts-list { 
+    display: flex; 
+ 
+} 
+ 
+ 
+.header__contacts { 
+    color: $head-contacts; 
+    font-weight: 500; 
+    font-size: 14px; 
+    display: flex; 
+    align-items: center; 
+ 
+} 
+ 
+.email { 
+    margin-right: 50px; 
+} 
+ 
+ 
+ 
+.header__contacts:hover  
+.header__contacts:focus { 
+    color: $hover-color; 
+    font-weight: 500; 
+} 
+ 
+.header__contacts-list .header__contacts:hover, 
+.header__contacts:hover .header__icon{ 
+    color: $hover-color; 
+    fill: $hover-color; 
+} 
+.header__icon{ 
+    fill: $head-contacts; 
+    margin-right: 8px; 
+}

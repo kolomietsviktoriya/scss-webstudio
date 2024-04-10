@@ -1,0 +1,279 @@
+/* footer */ 
+.footer { 
+    background-color: $bacraund-color; 
+    padding-top: 60px; 
+    padding-bottom: 60px; 
+} 
+ 
+.foot__studio { 
+    color: var$foot-studio; 
+    font-size: 26px; 
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 700; 
+    line-height: 171.429%; 
+} 
+ 
+.foot__web { 
+    color: $web; 
+    font-size: 26px; 
+    font-family: 'Raleway', sans-serif; 
+} 
+.footer__social__list{ 
+    display: flex; 
+    gap: 8px; 
+} 
+.footer__social__link{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 44px; 
+    height: 44px; 
+    border-radius: 50%; 
+    background-color: rgba(255,255,255,0.1); 
+    fill: #fff; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms; 
+    cursor: pointer; 
+} 
+.footer__social__link:hover, 
+.footer__social__link:focus{ 
+    background-color: $hover-color; 
+} 
+.footer__social__svg{ 
+    width: 20px; 
+    height: 20px; 
+    fill: #fff; 
+} 
+.footer__wrap{ 
+    display: flex; 
+    justify-content: space-between; 
+} 
+.geo { 
+    color: $foot-adress; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    font-size: 14px; 
+    line-height: 171.429%; 
+ 
+} 
+ 
+.foot__contacts { 
+    color: $foot-adress; 
+    font-family: Roboto; 
+    font-weight: 400; 
+    font-size: 14px; 
+    line-height: 171.429%; 
+} 
+ .footer__title{
+    font-weight: 700;
+    font-size: 14px;
+    color: $foot-adress;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+ }
+ .form__input{
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border:  1px solid #FFFFFF4D;
+    background:  #2F303A;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    flex-shrink: 0;
+ }
+ .footer__submit__btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: $foot-adress;
+    background:  #2196F3;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $foot-adress;
+    margin-left: 12px;
+ }
+ .footer__form__filt{
+    display: flex;
+    
+ }
+ .footer__form__title{
+    color: $foot-adress;
+    font-weight: 700;
+    font-size: 14px;
+     letter-spacing: 0.03em;
+     margin-bottom: 20px;
+     text-transform: uppercase;
+ }
+ .footer__icon{
+    width: 24px;
+    height: 24px;
+    fill: $foot-adress;
+    margin-left: 10px;
+
+    
+ }
+ /* modal */ 
+.backdrop { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    transition: opacity 250ms ease; 
+    background-color: rgba(0, 0, 0, 0.2); 
+  } 
+  .backdrop.is__hidden { 
+    opacity: 0; 
+    visibility: hidden; 
+    pointer-events: none; 
+  } 
+  .modal { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    min-width: 528px; 
+    min-height: 581px; 
+    background-color: $foot-adress; 
+    border-radius: 4px; 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 
+      0px 2px 1px rgba(0, 0, 0, 0.2); 
+  } 
+  .modal__close__button { 
+    margin-top: 8px; 
+    margin-left: 490px; 
+    width: 30px; 
+    height: 30px; 
+    background-color: $foot-adress; 
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    box-sizing: border-box; 
+    cursor: pointer; 
+    border-radius: 50%; 
+    background-image: url(./images/icons.svg#icon-close); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: flex; 
+    align-items: center; 
+  } 
+  .modal__icon { 
+    fill: currentColor; 
+    align-items: center; 
+    transition: color 250ms ease; 
+  } 
+  .modal__icon:hover, 
+  .modal__icon:focus { 
+    color: $hover-color; 
+  }   
+  .modal__form__title{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.15;
+      letter-spacing: 0.03em;
+      text-align: center;
+      color: $head-nav;
+      margin-bottom: 12px;
+  }
+  .modal__form{
+      padding-right: 40px;
+      padding-left: 40px;
+     
+  }
+  .modal__form__label{
+      margin-bottom: 4px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.01em;
+      color: $head-contacts;
+      display: flex;
+  }
+  .modal__form__fill{
+      margin-bottom: 10px;
+      position: relative;
+  
+  }
+  .modal__form__input{
+      padding-left: 42px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      height: 40px;
+      width: 448px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      cursor: pointer;
+  }
+  .modal__form__icon{
+      position: absolute;
+      left: 12px;
+      top: 30px;
+      fill: rgba(33, 33, 33, 1);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      width: 18px;
+      height: 18px;
+  }
+  .coment{
+      width: 448px;
+      height: 120px;
+      resize: none;
+      padding: 12px 16px ;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      box-sizing: border-box;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  }
+  .coment:focus{
+      outline: none;
+      border-color: $button;
+  }
+  .coment::placeholder{
+      font-family: 'Roboto';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+  }
+  .modal__form__input:focus{
+      outline: none;
+      border-color: $button;
+  }
+  .modal__form__input:focus + .modal-form-icon{
+      fill: $button;
+  }
+  .modal__form__policy{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-bottom: 30px;
+  }
+  .policy__text{
+      margin-left: 7px;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.01;
+      color: $head-contacts;
+  }
+  .policy__link{
+      color: $button;
+      text-decoration: underline;
+  }
+  .agree__btn{
+    padding: 10px 30px;
+    min-width: 200px;
+    text-align: center;
+    color: $button;
+    background-color: $button;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+  }
+  .agree__btn:hover, 
+  .agree__btn:focus{
+      background-color: $button;
+  }
