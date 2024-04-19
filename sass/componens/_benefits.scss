@@ -1,4 +1,28 @@
-.benefits__card::before{ 
+
+// .benefits { 
+//     padding-top: 95px; 
+// } 
+ 
+
+ 
+// .benefits__card { 
+//     width: 270px; 
+ 
+// } 
+ 
+
+// .name__section{ 
+//     @include title();
+// } 
+ .benefits { 
+    padding-top: 60px; 
+    padding-bottom: 60px;
+} 
+ .benefits__card { 
+    min-width: 290px;
+    max-width: 450px;
+} 
+ .benefits__card::before{ 
     content: ''; 
     display: block; 
     width: 100%; 
@@ -20,25 +44,13 @@
 .benefits__card:nth-child(4)::before{ 
     background-image: url(../img/astronavt.webp); 
 } 
-.benefits { 
-    padding-top: 95px; 
-} 
- 
-.benefits__list { 
-    @include flex();
-} 
- 
-.benefits__card { 
-    width: 270px; 
- 
-} 
- 
 .benefits__title { 
     color: $main-titles; 
     font-weight: 700; 
     margin-bottom: 10px; 
     font-size: 14px; 
     text-transform: uppercase; 
+    text-align: center;
  
 } 
  
@@ -48,9 +60,36 @@
     font-size: 14px; 
     line-height: 171.429% 
 } 
-.name__section{ 
-    @include title();
-} 
- 
+ @media screen and (min-width:768px){
+    .benefits__card{
+        min-width: 354px;
+        max-width: 354px;
+        margin-bottom: 30px;
 
- 
+    }
+    .benefits__title{
+        text-align: left;
+    }
+    .benefits__list { 
+    @include flex();
+    flex-wrap: wrap;
+} 
+.benefits{
+    padding-bottom: 30px;
+}
+ }
+ @media screen and (min-width:768px){
+    .benefits__card{
+        margin-bottom: 0;
+        min-width: 270px ;
+        max-width :270px ;
+    }
+    .benefits__list{
+        flex-wrap: nowrap;
+
+    }
+    .benefits{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+ }
