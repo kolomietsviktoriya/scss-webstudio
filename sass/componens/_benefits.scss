@@ -71,7 +71,8 @@
         text-align: left;
     }
     .benefits__list { 
-    @include flex();
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 } 
 .benefits{

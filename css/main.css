@@ -708,6 +708,10 @@ body {
   .team__card {
     margin-bottom: 0;
   }
+  .team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 .clients {
   color: #212121;
@@ -953,8 +957,8 @@ body {
 
 /* modal */
 .project {
-  padding-bottom: 95px;
-  padding-top: 95px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .main__filter {
@@ -981,45 +985,24 @@ body {
   font-weight: 500;
 }
 
+.filter__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .main__card {
   border: 1px solid #eee;
-  width: 370px;
+  width: 290px;
 }
 
 .main__card:hover,
 .main__card:focus {
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
-
-.filter__wrap {
-  width: 575px;
-  margin: 0 auto;
-}
-
-.filter__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.project__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 30px;
-  /* display: flex; 
-  flex-wrap: wrap; 
-  gap: 30px; 
-  flex-basis:calc((100% - 60px) / 3); */
 }
 
 .card__photo {
@@ -1035,13 +1018,14 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.6;
   background-color: rgba(33, 150, 243, 0.8980392157);
   color: #fff;
-  padding: 63px 24px;
+  padding: 43px 24px;
   opacity: 0;
+  width: 100%;
 }
 
 .main__card {
@@ -1067,4 +1051,8 @@ body {
 
 .card {
   padding-left: 24px;
+}
+
+.card__photo {
+  max-width: 100%;
 }/*# sourceMappingURL=main.css.map */
