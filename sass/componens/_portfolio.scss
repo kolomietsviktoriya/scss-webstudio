@@ -160,6 +160,7 @@
                     }
                     .main__card{
                         position: relative;
+                        margin-bottom: 30px;
                     }
                     .main__card:hover .product__action{
                         opacity: 1 ;
@@ -183,3 +184,17 @@
                  .card__photo{
                     max-width: 100%;
                  }   
+     @media screen and (min-width:768px) {
+      .project__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .main__card{
+        width: 354px;
+      }
+      .product__action{
+         font-size: 18px;
+         padding: 49px 24px;
+     }
+     }            
