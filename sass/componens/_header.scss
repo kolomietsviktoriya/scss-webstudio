@@ -67,9 +67,7 @@
  
 } 
  
-.email { 
-    margin-right: 50px; 
-} 
+
  
  
  
@@ -91,6 +89,7 @@
 @media screen and (min-width:1200px) {
     .header__contacts-list{
         flex-direction: row;
+        gap: 50px;
     }
 }
 //mobile menu//

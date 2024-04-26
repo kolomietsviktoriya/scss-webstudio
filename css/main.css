@@ -142,10 +142,6 @@ body {
           align-items: center;
 }
 
-.email {
-  margin-right: 50px;
-}
-
 .header__contacts:hover .header__contacts:focus {
   color: #2196F3;
   font-weight: 500;
@@ -168,6 +164,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    gap: 50px;
   }
 }
 .menu-container {
